@@ -1,6 +1,9 @@
 @import "home";
 @import "config";
 @import "menu";
+@import "about";
+@import "project";
+@import "contact";
 @import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
 
 body {
@@ -20,6 +23,10 @@ h3 {
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
+}
+
+.text-second {
+  color: $secondary-color;
 }
 
 header {

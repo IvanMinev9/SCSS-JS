@@ -1,0 +1,59 @@
+.about {
+  padding-bottom: 5rem;
+
+  &_bio-img {
+    height: 50vh;
+    width: 100%;
+    background: url("/img/skull.jpg") center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .text-second {
+      padding-bottom: 1rem;
+    }
+  }
+  &_bio {
+    width: 80%;
+    text-align: center;
+  }
+  .jobs {
+    width: 50vh;
+    margin: 1rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &_job {
+      background: lighten($primary-color, 15%);
+      padding: 0.5rem;
+
+      h2,
+      h3 {
+        margin: 0.5rem 0;
+      }
+
+      h6 {
+        margin: 0.3rem 0;
+        font-size: 0.8rem;
+        font-weight: 200;
+        letter-spacing: 0.15rem;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3.5rem, -5rem);
+  }
+}
