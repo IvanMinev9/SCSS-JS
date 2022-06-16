@@ -4,13 +4,14 @@
 @import "about";
 @import "project";
 @import "contact";
-@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import "responsive";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
 
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: Goldman, sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.5;
 }
 

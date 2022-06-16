@@ -73,7 +73,7 @@
     padding-right: 1rem;
     transform: translateY(-100%);
     @include transition-ease;
-    padding-right: 15pc;
+    /*padding-right: 11pc;*/
 
     &.open {
       transform: translateY(0);

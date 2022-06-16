@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
 .home {
   height: 100%;
   padding-top: 40vh;
@@ -6,7 +6,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("/img/skull.jpg") center;
+  background: url("/img/main.jpg") center bottom;
   background-size: cover;
   /*.background-img {
     background: url(/img/skull.jpg);
@@ -28,6 +28,7 @@
 
 .home_name--last {
   font-weight: 700;
+  color: #3e97a3;
 }
 
 * {
@@ -55,7 +56,7 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -66,7 +67,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -77,7 +78,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -127,14 +128,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-color: #5e4832ed;
+  background-color: #3c4c4ee6;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  padding-right: 15pc;
+  /*padding-right: 11pc;*/
 }
 
 .nav .menu-nav.open {
@@ -155,7 +156,7 @@
 }
 
 .nav .menu-nav_item.active > a {
-  color: #e58d48;
+  color: #32646b;
 }
 
 .nav .menu-nav_link {
@@ -170,7 +171,7 @@
 }
 
 .nav .menu-nav_link:hover {
-  color: #e58d48;
+  color: #32646b;
 }
 
 .menu-nav_item:nth-child(1) {
@@ -200,7 +201,7 @@
 .about_bio-img {
   height: 50vh;
   width: 100%;
-  background: url("/img/skull.jpg") center;
+  background: url("/img/main.jpg") center bottom;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,6 +221,7 @@
 .about_bio-img p {
   margin-bottom: 2rem;
   text-align: center;
+  color: azure;
 }
 
 .about_bio-img .text-second {
@@ -242,7 +244,7 @@
 }
 
 .about .jobs_job {
-  background: #262626;
+  background: white;
   padding: 0.5rem;
 }
 
@@ -280,7 +282,7 @@
 .project_bio-img {
   height: 30vh;
   width: 100%;
-  background: url("/img/skull.jpg") center;
+  background: url("/img/main.jpg") bottom;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +302,7 @@
 .project_bio-img .text-second {
   font-size: 2rem;
   margin-bottom: 2rem;
+  /*backdrop-filter: brightness(0.5);*/
 }
 
 .project_items {
@@ -314,13 +317,15 @@
 
 .project_item {
   position: relative;
-  border-bottom: 5px solid #e58d48;
+  border-bottom: 5px solid #32646b;
   overflow: hidden;
   cursor: pointer;
 }
 
 .project_item img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project_item::after {
@@ -330,7 +335,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #e58d48;
+  background: #32646b;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -363,14 +368,14 @@
 
 .project_btn {
   opacity: 0;
-  -webkit-column-rule: #000;
-          column-rule: #000;
+  -webkit-column-rule: #fff;
+          column-rule: #fff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .project_btn:hover {
-  color: #000;
+  color: #fff;
 }
 
 .project .social-icons {
@@ -388,11 +393,107 @@
           transform: rotate(90deg) translate(-3.5rem, -5rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  background: url("/img/main.jpg") bottom;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #32646b;
+}
+
+.contact_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  color: azure;
+}
+
+.contact .social-icons {
+  position: inherit;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav_item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav_link {
+    font-size: 1.5rem;
+  }
+  .about_bio {
+    font-size: 1.5rem;
+  }
+  .project_bio-img {
+    height: 40vh;
+  }
+  .project_items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .project .text-second {
+    font-size: 3rem;
+  }
+  .contact_list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project_items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .contact_list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .project_bio-img {
+    height: 50vh;
+  }
+}
+
 body {
-  background: black;
-  color: #fff;
+  background: #ececec;
+  color: #000;
   height: 100vh;
-  font-family: Goldman, sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.5;
 }
 
@@ -403,12 +504,12 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 .text-second {
-  color: #e58d48;
+  color: #32646b;
 }
 
 header {
@@ -436,7 +537,7 @@ main a {
 }
 
 main a:hover {
-  color: #e58d48;
+  color: #32646b;
 }
 
 footer {
@@ -445,6 +546,6 @@ footer {
   font-size: 1rem;
   right: 1rem;
   padding: 1rem;
-  color: #fff;
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
